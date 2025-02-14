@@ -1,17 +1,91 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="preload" href="#" type="font/woff2" as="font">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="header">Шапка</header>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Интернет магазин Drink2Go</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="preload" href="#" type="font/woff2" as="font">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="page-header" data-test="header">
+      <div class=" page-header__container container">
+        <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
+          <img src="images/logo-mobile-header.svg" width="32" height="36" alt="логотип интернет магазина Drink2Go">
+          <h1 class="logo__text">Интернет-магазин кофейных напитков</h1>
+        </a>
+        <nav class="header-nav">
+          <button class="header-nav__toggle js-toggle-button" type="button" aria-label="Открыть меню">
+            <span class="header-nav__toggle-decor"></span>
+          </button>
+          <ul class="header-nav__list nav-list">
+            <li class="nav-list__item nav-list__item--current">
+              <a class="nav-list__link" href="index.html" aria-current="page">главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="catalog.html">каталог</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">доставка</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="#">о нас</a>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header-nav nav-entry">
+          <ul class="nav-entry__list">
+            <li class="nav-entry__item">
+              <a href="#" class="nav-entry__link">Войти
+                <span class="nav-entry__link-decor nav-entry__link-decor--first"></span>
+              </a>
+            </li>
+            <li class="nav-entry__item">
+              <a href="#" class="nav-entry__link">Корзина
+                <span class="nav-entry__link-decor nav-entry__link-decor--two"></span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <main>
-      <h1>Страница для старта</h1>
+      <section class="hero" data-test="hero">
+        <div class="hero-wrapper container">
+          <div class="slider-pagination">
+            <span class="slider-button-prev">кнопка переключения назад</span>
+            <div class="slider-pagination__click">
+              <img src="images/slider-drink-mobile-1@1x.png" alt="кофе Декаф Флэт Уайт">
+            </div>
+            <div class="slider-pagination__click">
+              <img src="images/slider-drink-mobile-2@1x.png" alt="кофе Декаф Флэт Уайт">
+            </div>
+            <div class="slider-pagination__click">
+              <img src="images/slider-drink-mobile-3@1x.png" alt="кофе Декаф Флэт Уайт">
+            </div>
+          </div>
+          <div class="product-name">
+            <span class="product-name__text">Новинка!</span>
+            <h2 class="product-name__heading">Декаф Флэт Уайт</h2>
+            <span class="product-name__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</span>
+            <div class="product-name__order">
+              <span class="old-price">295₽</span>
+              <span class="new-price">225₽</span>
+              <button type="button" class="product-name__button button">Заказать</button>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
     </main>
-  </body>
+  </div>
+
+</body>
+
 </html>
