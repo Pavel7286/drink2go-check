@@ -13,7 +13,14 @@
   opacity: 1;
 
   &--open {
-    display: none; //открытие меню
+    display: none;
+
+    //открытие меню
+    @media (min-width: $tablet-width) {
+      position: relative;
+
+      display: flex;
+    }
   }
 }
 
@@ -82,10 +89,10 @@
   }
 }
 
-.header-nav--open .header-nav__list {
+/* .header-nav--open .header-nav__list {
   display: block;
 
   @media (min-width: $tablet-width) {
     display: flex;
   }
-}
+} */

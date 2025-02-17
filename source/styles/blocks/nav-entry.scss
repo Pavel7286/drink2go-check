@@ -13,6 +13,13 @@
   color: #333333;
 
   fill: currentColor;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+  }
 }
 
 .nav-entry__first-decor {
@@ -21,4 +28,16 @@
 
 .nav-entry__link--text {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $font-Montserrat;
+    color: $color-default-black;
+    text-transform: uppercase;
+    letter-spacing: 0.24px;
+  }
 }

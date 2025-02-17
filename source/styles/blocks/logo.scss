@@ -1,3 +1,26 @@
+.logo {
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+
+  gap: 20px;
+}
+
+.logo__img {
+  display: block;
+}
+
 .logo__text {
   display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    font-family: $font-Montserrat;
+    color: $color-default-black;
+  }
 }
