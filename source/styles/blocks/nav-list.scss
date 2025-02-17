@@ -1,0 +1,27 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  background-color: $color-default-white;
+}
+
+.nav-list__item--current {
+  position: relative;
+}
+
+.nav-list__link {
+  display: block;
+  padding: 20px 20px 21px;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-Montserrat;
+  text-align: center;
+  color: $color-default-black;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.24px;
+}

@@ -1,0 +1,24 @@
+.nav-entry__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-entry__link {
+  display: block;
+  padding: 22px;
+
+  color: #333333;
+
+  fill: currentColor;
+}
+
+.nav-entry__first-decor {
+  padding: 22px;
+}
+
+.nav-entry__link--text {
+  display: none;
+}

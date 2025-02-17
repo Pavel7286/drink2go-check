@@ -15,14 +15,15 @@
     <header class="page-header" data-test="header">
       <div class=" page-header__container container">
         <a class="page-header__logo logo logo--header" href="index.html" aria-current="page">
-          <img src="images/logo-mobile-header.svg" width="32" height="36" alt="логотип интернет магазина Drink2Go">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="images/logo-long.svg" width="170" height="36">
+            <source media="(min-width: 768px)" srcset="images/logo-short.svg" width="82" height="36">
+            <img src="images/logo-mobile-header.svg" width="32" height="36" alt="логотип интернет магазина Drink2Go">
+          </picture>
           <h1 class="logo__text">Интернет-магазин кофейных напитков</h1>
         </a>
         <nav class="header-nav">
-          <button class="header-nav__toggle js-toggle-button" type="button" aria-label="Открыть меню">
-            <span class="header-nav__toggle-decor"></span>
-          </button>
-          <ul class="header-nav__list nav-list">
+          <ul class="header-nav__list nav-list header-nav__list--open">
             <li class="nav-list__item nav-list__item--current">
               <a class="nav-list__link" href="index.html" aria-current="page">главная</a>
             </li>
@@ -36,20 +37,30 @@
               <a class="nav-list__link" href="#">о нас</a>
             </li>
           </ul>
+
         </nav>
         <nav class="header-nav nav-entry">
           <ul class="nav-entry__list">
             <li class="nav-entry__item">
-              <a href="#" class="nav-entry__link">Войти
-                <span class="nav-entry__link-decor nav-entry__link-decor--first"></span>
+              <a href="#" class="nav-entry__link">
+                <span class="nav-entry__link--text">Войти</span>
+                <svg width="16" height="16">
+                  <use href="icons/stack.svg#entry"></use>
+                </svg>
               </a>
             </li>
             <li class="nav-entry__item">
-              <a href="#" class="nav-entry__link">Корзина
-                <span class="nav-entry__link-decor nav-entry__link-decor--two"></span>
+              <a href="#" class="nav-entry__link">
+                <span class="nav-entry__link--text">Корзина</span>
+                <svg width="16" height="16">
+                  <use href="icons/stack.svg#basket"></use>
+                </svg>
               </a>
             </li>
           </ul>
+          <button class="header-nav__toggle js-toggle-button header-nav--open" type="button" aria-label="Открыть меню">
+            <span class="header-nav__toggle-decor"></span>
+          </button>
         </nav>
       </div>
     </header>
@@ -67,6 +78,7 @@
             <div class="slider-pagination__click">
               <img src="images/slider-drink-mobile-3@1x.png" alt="кофе Декаф Флэт Уайт">
             </div>
+            <span class="slider-button-next">кнопка переключения вперед</span>
           </div>
           <div class="product-name">
             <span class="product-name__text">Новинка!</span>
@@ -343,7 +355,7 @@
               <a class="social__link" href="#">
                 <span class="visually-hidden">Pinterest</span>
                 <svg width="22" height="22">
-                  <use href="iicons/stack.svg#pinterest"></use>
+                  <use href="icons/stack.svg#pinterest"></use>
                 </svg>
               </a>
             </li>
