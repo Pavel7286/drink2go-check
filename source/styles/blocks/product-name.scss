@@ -7,10 +7,20 @@
 
   @media (min-width: $tablet-width) {
     max-width: 768px;
+    padding: 0 80px;
+    padding-top: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 1440px;
+    align-items: start;
+    max-width: 625px;
+    padding: 0;
+  }
+}
+
+.product-name__text {
+  @media (min-width: $desktop-width) {
+    text-align: start;
   }
 }
 
@@ -25,12 +35,29 @@
   text-align: center;
   color: $color-default-black;
   letter-spacing: 0.72px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+
+    font-size: 56px;
+    line-height: 80px;
+    letter-spacing: 1.12px;
+  }
 }
 
 .product-name__description {
   padding-bottom: 20px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
 }
 
 .product-name__order {

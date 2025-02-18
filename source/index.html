@@ -69,14 +69,14 @@
         <div class="hero__wrapper">
           <div class="slider-pagination">
             <div class="slider-pagination__location">
-              <div class="slider-pagination__photo">
+              <div class="slider-pagination__wrapper">
                 <picture>
                   <source media="(min-width: 1440px)" type="image/webp" srcset="images/slider-dekaf-desktop-1@1x.webp 1x, images/slider-dekaf-desktop-1@2x.webp 2x" width="600" height="600">
                   <source media="(min-width: 1440px)" type="image/png" srcset="images/slider-dekaf-desktop-1@1x.png 1x, images/slider-dekaf-desktop-1@2x.png 2x" width="600" height="600">
                   <source media="(min-width: 768px)" type="image/webp" srcset="images/slider-dekaf-tablet-1@1x.webp 1x, images/slider-dekaf-tablet-1@2x.webp 2x" width="476" height="476">
                   <source media="(min-width: 768px)" type="image/png" srcset="images/slider-dekaf-tablet-1@1x.png 1x, images/slider-dekaf-tablet-1@2x.png 2x" width="476" height="476">
                   <source type="image/webp" srcset="images/slider-dekaf-mobile-1@1x.webp 1x, images/slider-dekaf-mobile-1@2x.webp 2x" width="280" height="280">
-                  <img src="images/slider-dekaf-mobile-1@1x.png" srcset="images/slider-dekaf-mobile-1@2x.png 2x" width="280" height="280" alt="кофе Декаф Флэт Уайт">
+                  <img class="slider-pagination__photo" src="images/slider-dekaf-mobile-1@1x.png" srcset="images/slider-dekaf-mobile-1@2x.png 2x" width="280" height="280" alt="кофе Декаф Флэт Уайт">
                 </picture>
               </div>
 
@@ -97,14 +97,14 @@
           </div>
           <div class="slider-pagination">
             <div class="slider-pagination__location">
-              <div class="slider-pagination__photo">
+              <div class="slider-pagination__wrapper">
                 <picture>
                   <source media="(min-width: 1440px)" type="image/webp" srcset="images/slider-lavender-desktop-2@1x.webp 1x, images/slider-lavender-desktop-2@2x.webp 2x" width="600" height="600">
                   <source media="(min-width: 1440px)" type="image/png" srcset="images/slider-lavender-desktop-2@1x.png 1x, images/slider-lavender-desktop-2@2x.png 2x" width="600" height="600">
                   <source media="(min-width: 768px)" type="image/webp" srcset="images/slider-lavender-tablet-2@1x.webp 1x, images/slider-lavender-tablet-2@2x.webp 2x" width="476" height="476">
                   <source media="(min-width: 768px)" type="image/png" srcset="images/slider-lavender-tablet-2@1x.png 1x, images/slider-lavender-tablet-2@2x.png 2x" width="476" height="476">
                   <source type="image/webp" srcset="images/slider-lavender-mobile-2@1x.webp 1x, images/slider-lavender-mobile-2@2x.webp 2x" width="280" height="280">
-                  <img src="images/slider-lavender-mobile-2@1x.png" srcset="images/slider-lavender-mobile-2@2x.png 2x" width="280" height="280" alt="Лавандовый Латте">
+                  <img class="slider-pagination__photo" src="images/slider-lavender-mobile-2@1x.png" srcset="images/slider-lavender-mobile-2@2x.png 2x" width="280" height="280" alt="Лавандовый Латте">
                 </picture>
               </div>
               <div class="product-name">
@@ -123,14 +123,14 @@
           </div>
           <div class="slider-pagination">
             <div class="slider-pagination__location">
-              <div class="slider-pagination__photo slider-pagination__photo--active">
+              <div class="slider-pagination__wrapper">
                 <picture>
                   <source media="(min-width: 1440px)" type="image/webp" srcset="images/slider-espresso-desktop-3@1x.webp 1x, images/slider-espresso-desktop-3@2x.webp 2x" width="600" height="600">
                   <source media="(min-width: 1440px)" type="image/png" srcset="images/slider-espresso-desktop-3@1x.png 1x, images/slider-espresso-desktop-3@2x.png 2x" width="600" height="600">
                   <source media="(min-width: 768px)" type="image/webp" srcset="images/slider-espresso-tablet-3@1x.webp 1x, images/slider-espresso-tablet-3@2x.webp 2x" width="476" height="476">
                   <source media="(min-width: 768px)" type="image/png" srcset="images/slider-espresso-tablet-3@1x.png 1x, images/slider-espresso-tablet-3@2x.png 2x" width="476" height="476">
                   <source type="image/webp" srcset="images/slider-espresso-mobile-3@1x.webp 1x, images/slider-espresso-mobile-3@2x.webp 2x" width="280" height="280">
-                  <img src="images/slider-espresso-mobile-3@1x.png" srcset="images/slider-espresso-mobile-3@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо">
+                  <img class="slider-pagination__photo" src="images/slider-espresso-mobile-3@1x.png" srcset="images/slider-espresso-mobile-3@2x.png 2x" width="280" height="280" alt="Тройной Эспрессо">
                 </picture>
               </div>
               <div class="product-name">
@@ -154,6 +154,11 @@
         <button class="hero__slider-button-next hero-button" type="button">
           <span class="visually-hidden">кнопка переключения вперед</span>
         </button>
+        <div class="hero__pagination">
+          <span class="hero__pagination-first"></span>
+          <span class="hero__pagination-two"></span>
+          <span class="hero__pagination-three"></span>
+        </div>
       </section>
       <section class="features" data-test="features">
         <div class="features-wrapper container">

@@ -7,12 +7,30 @@
   margin: 0 auto;
   overflow: hidden;
 
-  background-color: #f3ebe1;
+  background-color: $color-default-white;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 188px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1440px;
+  }
 }
 
 .hero__wrapper {
   display: flex;
   flex-shrink: 0;
+
+  background-color: #f3ebe1;
+
+  @media (min-width: $tablet-width) {
+    max-height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 714px;
+  }
 }
 
 .hero-button {
@@ -24,8 +42,57 @@
   background-color: #f3ebe1;
   border: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    max-height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 714px;
+  }
+}
+
+.hero__slider-button-prev {
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../../icons/arrow-back.svg");
+
+    @media (min-width: $tablet-width) {
+      left: auto;
+
+      transform: translate(-50%);
+    }
+  }
 }
 
 .hero__slider-button-next {
   right: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+
+    width: 20px;
+    height: 20px;
+
+    background-image: url("../../icons/arrow-next.svg");
+
+    @media (min-width: $tablet-width) {
+      right: auto;
+
+      transform: translate(-50%);
+    }
+  }
+}
+
+.hero__pagination {
+  display: none;
 }
