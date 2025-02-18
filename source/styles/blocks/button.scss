@@ -1,0 +1,18 @@
+.button {
+  display: inline-block;
+  padding: 8px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: $font-Montserrat;
+  text-align: center;
+  color: $color-default-white;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: $color-default-button;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}

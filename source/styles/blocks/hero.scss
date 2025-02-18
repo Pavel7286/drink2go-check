@@ -1,0 +1,31 @@
+.hero {
+  position: relative;
+
+  display: flex;
+  width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  background-color: #f3ebe1;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.hero-button {
+  position: absolute;
+
+  width: 20px;
+  height: 100%;
+
+  background-color: #f3ebe1;
+  border: none;
+  cursor: pointer;
+}
+
+.hero__slider-button-next {
+  right: 0;
+}
