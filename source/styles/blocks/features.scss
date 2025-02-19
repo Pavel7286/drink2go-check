@@ -1,6 +1,169 @@
-/* .features {
+.features {
+  padding-top: 50px;
+
   @media (min-width: $tablet-width) {
-    padding-top: 188px;
+    padding-bottom: 100px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
   }
 }
- */
+
+.features__title {
+  margin: 0;
+  padding-bottom: 4px;
+
+  text-align: center;
+}
+
+.features__subtitle {
+  display: block;
+  padding-bottom: 36px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: $font-Montserrat;
+  text-align: center;
+  color: $color-default-black;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 60px;
+
+    font-size: 42px;
+    line-height: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 80px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+    gap: 50px 30px;
+    grid-template-columns: 339px 339px;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 30px;
+    grid-template-columns: repeat(4, 318px);
+  }
+}
+
+.features__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 32px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    padding-bottom: 0;
+    padding-left: 64px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $font-Montserrat;
+    text-align: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+
+    text-align: center;
+  }
+}
+
+.features__item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 32px;
+  font-family: $font-Montserrat;
+
+  @media (min-width: $tablet-width) {
+    align-self: start;
+    margin: 0;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32px;
+    font-family: $font-Montserrat;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 72px;
+  }
+}
+
+.features__item--primary {
+  background-image: url("../../icons/watch.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 110px;
+  background-size: 56px 52px;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 0 top 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top 0 center;
+  }
+}
+
+.features__item--secondary {
+  background-image: url("../../icons/pocket.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 110px;
+  background-size: 56px 52px;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 0 top 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top 0 center;
+  }
+}
+
+.features__item--tertiary {
+  background-image: url("../../icons/lightning.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 110px;
+  background-size: 56px 52px;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 0 top 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top 0 center;
+  }
+}
+
+.features__item--quaternary {
+  background-image: url("../../icons//sheet.svg");
+  background-repeat: no-repeat;
+  background-position: top 0 right 110px;
+  background-size: 56px 52px;
+
+  @media (min-width: $tablet-width) {
+    background-position: left 0 top 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: top 0 center;
+  }
+}
