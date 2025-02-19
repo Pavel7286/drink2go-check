@@ -1,7 +1,8 @@
 .features {
-  padding-top: 50px;
+  padding-top: 47px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 60px;
     padding-bottom: 100px;
   }
 
@@ -12,14 +13,18 @@
 
 .features__title {
   margin: 0;
-  padding-bottom: 4px;
+  padding-bottom: 7px;
 
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .features__subtitle {
   display: block;
-  padding-bottom: 36px;
+  padding-bottom: 35px;
 
   font-weight: 700;
   font-size: 24px;
@@ -64,14 +69,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-top: 66px;
   padding-bottom: 32px;
 
+  font-size: 14px;
+  line-height: 20px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     display: block;
+    padding-top: 0;
     padding-bottom: 0;
-    padding-left: 64px;
+    padding-left: 72px;
 
     font-weight: 400;
     font-size: 16px;
@@ -88,6 +97,9 @@
 }
 
 .features__item-title {
+  margin: 0;
+  padding-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 32px;
@@ -95,11 +107,11 @@
 
   @media (min-width: $tablet-width) {
     align-self: start;
-    margin: 0;
+    padding-bottom: 11px;
 
     font-weight: 700;
-    font-size: 18px;
-    line-height: 32px;
+    font-size: 24px;
+    line-height: 36px;
     font-family: $font-Montserrat;
   }
 
@@ -111,8 +123,8 @@
 .features__item--primary {
   background-image: url("../../icons/watch.svg");
   background-repeat: no-repeat;
-  background-position: top 0 right 110px;
-  background-size: 56px 52px;
+  background-position: top 0 right 114px;
+  background-size: 52px 56px;
 
   @media (min-width: $tablet-width) {
     background-position: left 0 top 0;
@@ -126,8 +138,8 @@
 .features__item--secondary {
   background-image: url("../../icons/pocket.svg");
   background-repeat: no-repeat;
-  background-position: top 0 right 110px;
-  background-size: 56px 52px;
+  background-position: top 0 right 114px;
+  background-size: 52px 56px;
 
   @media (min-width: $tablet-width) {
     background-position: left 0 top 0;
@@ -141,8 +153,8 @@
 .features__item--tertiary {
   background-image: url("../../icons/lightning.svg");
   background-repeat: no-repeat;
-  background-position: top 0 right 110px;
-  background-size: 56px 52px;
+  background-position: top 0 right 114px;
+  background-size: 52px 56px;
 
   @media (min-width: $tablet-width) {
     background-position: left 0 top 0;
@@ -156,8 +168,8 @@
 .features__item--quaternary {
   background-image: url("../../icons//sheet.svg");
   background-repeat: no-repeat;
-  background-position: top 0 right 110px;
-  background-size: 56px 52px;
+  background-position: top 0 right 114px;
+  background-size: 52px 56px;
 
   @media (min-width: $tablet-width) {
     background-position: left 0 top 0;

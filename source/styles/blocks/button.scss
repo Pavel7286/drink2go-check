@@ -1,6 +1,6 @@
 .button {
   display: inline-block;
-  padding: 8px;
+  padding: 8px 22px 8px;
 
   font-weight: 400;
   font-size: 16px;
@@ -8,7 +8,6 @@
   font-family: $font-Montserrat;
   text-align: center;
   color: $color-default-white;
-  text-transform: uppercase;
   text-decoration: none;
 
   background-color: $color-default-button;

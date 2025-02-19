@@ -1,6 +1,8 @@
 .header-nav {
   display: flex;
   align-items: center;
+
+  gap: 16px;
 }
 
 .header-nav__list {
@@ -29,7 +31,7 @@
 
   width: 16px;
   height: 16px;
-  padding: 30px;
+  padding: 25px 0 25px 23px;
 
   background-color: transparent;
   border: none;
@@ -65,11 +67,11 @@
   }
 
   &::before {
-    top: 6px;
+    top: 5px;
   }
 
   &::after {
-    top: -6px;
+    top: -5px;
   }
 }
 

@@ -6,9 +6,13 @@
   list-style: none;
 }
 
+/* .nav-entry__item {
+  padding-right: 13px;
+} */
+
 .nav-entry__link {
   display: block;
-  padding: 22px;
+  padding: 22px 22px 17px;
 
   color: #333333;
 
@@ -17,6 +21,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     align-items: center;
+    padding: 28px 18px 30px 41px;
 
     gap: 8px;
   }

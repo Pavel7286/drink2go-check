@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 1360px;
   margin: 0 auto;
+  /* padding-top: 20px; */
   overflow: hidden;
 
   background-color: $color-default-white;
@@ -22,6 +23,8 @@
 .hero__wrapper {
   display: flex;
   flex-shrink: 0;
+  padding-top: 17px;
+  padding-bottom: 59px;
 
   background-color: #f3ebe1;
 
@@ -31,6 +34,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 714px;
+    padding-top: 0;
   }
 }
 
@@ -38,7 +42,7 @@
   position: absolute;
 
   width: 20px;
-  height: 100%;
+  min-height: 636px;
 
   background-color: #f3ebe1;
   border: none;
@@ -68,7 +72,7 @@
     @media (min-width: $tablet-width) {
       left: auto;
 
-      transform: translate(-50%);
+      transform: translate(-50%, -35%);
     }
   }
 }
@@ -89,7 +93,7 @@
     @media (min-width: $tablet-width) {
       right: auto;
 
-      transform: translate(-50%);
+      transform: translate(-50%, -35%);
     }
   }
 }
